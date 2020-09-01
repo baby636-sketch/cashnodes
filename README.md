@@ -1,3 +1,9 @@
+# The project has migrated over to GitLab.com
+
+## see https://gitlab.com/bitcoinunlimited/cashnodes
+
+
+
 # CASHNODES Crawler
 
 

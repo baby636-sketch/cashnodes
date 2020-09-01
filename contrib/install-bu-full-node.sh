@@ -49,7 +49,7 @@
 REPO_URL="https://github.com/BitcoinUnlimited/BitcoinUnlimited.git"
 
 # See https://github.com/BitcoinUnlimited/BitcoinUnlimited/tags for latest version.
-VERSION=1.8.0.0
+VERSION=1.9.0.0
 PKG_NAME=bch-unlimited
 
 TARGET_DIR=$HOME/bitcoin-unlimited
@@ -655,7 +655,7 @@ WELCOME_TEXT=$(cat <<EOF
 
 Welcome!
 
-You are about to install a Bitcoin Cash full node based on BCH Unlimited v$VERSION.
+You are about to install a Bitcoin Cash full node based on BCH Unlimited $VERSION.
 
 All files will be installed under $TARGET_DIR directory.
 
