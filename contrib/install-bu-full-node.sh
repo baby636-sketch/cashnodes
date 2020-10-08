@@ -49,7 +49,7 @@
 REPO_URL="https://github.com/BitcoinUnlimited/BitcoinUnlimited.git"
 
 # See https://github.com/BitcoinUnlimited/BitcoinUnlimited/tags for latest version.
-VERSION=1.9.0.0
+VERSION=1.9.0.1
 PKG_NAME=bch-unlimited
 
 TARGET_DIR=$HOME/bitcoin-unlimited
@@ -355,7 +355,7 @@ build_bucash() {
     rm -f build.out
     cd BitcoinUnlimited &&
         git fetch > build.out 2>&1 &&
-        git checkout "bucash$VERSION" 1>> build.out 2>&1 &&
+        git checkout "BCHunlimited$VERSION" 1>> build.out 2>&1 &&
         git clean -f -d -x 1>> build.out 2>&1 &&
         ./autogen.sh 1>> build.out 2>&1 &&
         ./configure \
