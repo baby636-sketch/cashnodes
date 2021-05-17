@@ -49,7 +49,7 @@
 REPO_URL="https://github.com/BitcoinUnlimited/BitcoinUnlimited.git"
 
 # See https://github.com/BitcoinUnlimited/BitcoinUnlimited/tags for latest version.
-VERSION=1.9.0.1
+VERSION=1.9.2.0
 PKG_NAME=bch-unlimited
 
 TARGET_DIR=$HOME/bitcoin-unlimited
