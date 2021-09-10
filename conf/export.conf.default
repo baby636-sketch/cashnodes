@@ -15,5 +15,5 @@ debug = False
 # Relative path to directory containing timestamp-prefixed JSON export files
 export_dir = data/export/e3e1f3e8
 
-# filter by user_agent
+# filter by user_agent (could be multiple strings separated by \n)
 exclude_uagent_string =

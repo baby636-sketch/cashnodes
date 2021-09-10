@@ -51,9 +51,10 @@ def get_row(node):
     # address, port, version, user_agent, timestamp, services
     node = eval(node)
     uagent = node[3]
-    p = re.compile(CONF['exclude_uagent_string'])
-    if (p.search(uagent) is not None):
-        return ''
+    for ua in CONF['exclude_uagent_string']:
+        p = re.compile(ua)
+        if (p.search(uagent) is not None):
+            return ''
     address = node[0]
     port = node[1]
     services = node[-1]
@@ -113,7 +114,7 @@ def init_conf(argv):
     CONF['db'] = conf.getint('export', 'db')
     CONF['debug'] = conf.getboolean('export', 'debug')
     CONF['export_dir'] = conf.get('export', 'export_dir')
-    CONF['exclude_uagent_string'] = conf.get('export', 'exclude_uagent_string')
+    CONF['exclude_uagent_string'] = conf.get('export', 'exclude_uagent_string').strip().split("\n")
     if not os.path.exists(CONF['export_dir']):
         os.makedirs(CONF['export_dir'])
 
